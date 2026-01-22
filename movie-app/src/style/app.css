@@ -24,16 +24,16 @@ body {
     rgba(0,0,0,0.4)
   ),
   url(https://i.pinimg.com/1200x/27/5b/14/275b14689a0b5bde35d446c109bb3a19.jpg);
-  background-size: cover;       /* ensures image covers the whole banner */
-  background-position: center;  /* centers the image */
-  background-repeat: no-repeat; /* prevents tiling */
-  height: 250px;                /* set a proper height */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 250px; 
   border-radius: 10px;
   text-align: center;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;      /* centers text vertically */
+  justify-content: center;   
   padding: 20px;
   
 }
@@ -48,7 +48,6 @@ body {
   opacity: 0.9;
 }
 
-/* Popular Heading */
 .popular-heading {
   font-size: 24px;
   margin: 20px 0 10px;
@@ -71,7 +70,6 @@ body {
   font-size: 14px;
   opacity: 0.9;
 }
-
 
 .search-box {
   display: flex;
@@ -101,7 +99,6 @@ body {
   background: #be123c;
 }
 
-/* Loader */
 .loader {
   border: 5px solid #1e293b;
   border-top: 5px solid #e11d48;
@@ -123,7 +120,6 @@ body {
   color: #f87171;
 }
 
-/* Movie Grid */
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -163,7 +159,6 @@ body {
   color: #facc15;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .search-box {
     flex-direction: column;

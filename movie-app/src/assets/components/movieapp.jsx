@@ -59,7 +59,6 @@ const MovieSearch = () => {
 
     return (
         <div className="app">
-            {/* Banner */}
             <div className="banner">
                 <h1 className="title">🎬 Movie Search App</h1>
                 <p>Discover popular movies and search your favorite ones!</p>
@@ -86,8 +85,7 @@ const MovieSearch = () => {
 
             {loading && <div className="loader"></div>}
             {error && <p className="error">{error}</p>}
-
-            {/* Popular heading */}
+            
             {movies.length > 0 && !query && <h2 className="popular-heading">Popular Movies</h2>}
 
             <div className="movie-grid">
