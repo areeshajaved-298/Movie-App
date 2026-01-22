@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+}
+
+.app {
+  padding: 15px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.4)
+  ),
+  url(https://i.pinimg.com/1200x/27/5b/14/275b14689a0b5bde35d446c109bb3a19.jpg);
+  background-size: cover;       /* ensures image covers the whole banner */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents tiling */
+  height: 250px;                /* set a proper height */
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* centers text vertically */
+  padding: 20px;
+  
+}
+
+.banner h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Popular Heading */
+.popular-heading {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  text-align: left;
+}
+
+.categories {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category-tag {
+  padding: 7px 14px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+.search-box {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 260px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background: #e11d48;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #be123c;
+}
+
+/* Loader */
+.loader {
+  border: 5px solid #1e293b;
+  border-top: 5px solid #e11d48;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 30px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  text-align: center;
+  color: #f87171;
+}
+
+/* Movie Grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #020617;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.movie-card span {
+  font-size: 14px;
+  color: #facc15;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
